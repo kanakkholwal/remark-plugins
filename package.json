@@ -1,0 +1,37 @@
+{
+  "name": "remark-plugins",
+  "version": "0.6.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/kanakkholwal/remark-plugins#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kanakkholwal/remark-plugins"
+  },
+  "bugs": {
+    "url": "https://github.com/kanakkholwal/remark-plugins/issues"
+  },
+  "author": "Kanak Kholwal (@kanakkholwal)",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["remark", "plugins", "markdown", "unified"],
+  "license": "ISC",
+  "description": "A collection of remark plugins for markdown processing.",
+  "dependencies": {
+    "@types/mdast": "^4.0.4",
+    "class-variance-authority": "^0.7.0",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "mdast-util-directive": "^3.0.0",
+    "p-limit": "^5.0.0",
+    "slugify": "^1.6.6",
+    "unified": "^11.0.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "tailwind-merge": "^2.3.0"
+  }
+}
