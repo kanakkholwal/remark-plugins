@@ -141,7 +141,7 @@ const remarkCallout: Plugin = () => {
             const node_callout_type = toString((node.children[0] as Node & { value?: string })?.value || "default").trim().toLowerCase() as CalloutType;
 
 
-            const variant: CalloutType = CALLOUT_TYPES.includes(node_callout_type) ? node_callout_type as CalloutType : settings.defaultDirective;
+            const variant: CalloutType = Array.from(CALLOUT_TYPES).includes(node_callout_type) ? node_callout_type as CalloutType : settings.defaultDirective;
 
             const icon = settings.icons[variant] || ''
             const title = node.attributes["title"] || "";
